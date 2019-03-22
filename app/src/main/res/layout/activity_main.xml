@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextColor="#FFF"
+                app:title="StatusBarDemo"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="Color Set"
+                    android:textStyle="bold"/>
+
+            <FrameLayout
+                    android:id="@+id/color_pre_show_fl"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#000"
+                    android:layout_marginTop="10dp"/>
+
+            <SeekBar
+                    android:id="@+id/apha_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:layout_marginTop="10dp"/>
+
+            <SeekBar
+                    android:id="@+id/red_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:layout_marginTop="10dp"/>
+
+            <SeekBar
+                    android:id="@+id/green_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:layout_marginTop="10dp"/>
+
+            <SeekBar
+                    android:id="@+id/blue_sb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:layout_marginTop="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    android:text="Status Bar Flag"
+                    android:textStyle="bold"/>
+
+            <CheckBox
+                    android:id="@+id/translucent_status_cb"
+                    android:text="FLAG_TRANSLUCENT_STATUS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/translucent_navigation_cb"
+                    android:text="FLAG_TRANSLUCENT_NAVIGATION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/low_profile_cb"
+                    android:text="SYSTEM_UI_FLAG_LOW_PROFILE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/hide_navigation_cb"
+                    android:text="SYSTEM_UI_FLAG_HIDE_NAVIGATION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/fullscreen_cb"
+                    android:text="SYSTEM_UI_FLAG_FULLSCREEN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/layout_stable_cb"
+                    android:text="SYSTEM_UI_FLAG_LAYOUT_STABLE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/layout_hide_navigation_cb"
+                    android:text="SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/layout_fullscreen_cb"
+                    android:text="SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/immersive_cb"
+                    android:text="SYSTEM_UI_FLAG_IMMERSIVE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/immersive_sticky_cb"
+                    android:text="SYSTEM_UI_FLAG_IMMERSIVE_STICKY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/light_status_bar_cb"
+                    android:text="SYSTEM_UI_FLAG_LIGHT_STATUS_BAR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+
+            <CheckBox
+                    android:id="@+id/light_navigation_bar_cb"
+                    android:text="SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                    android:id="@+id/fit_system_window_cb"
+                    android:text="FIT_SYSTEM_WINDOW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            <Button
+                    android:id="@+id/next_activity_bt"
+                    android:layout_marginTop="20dp"
+                    android:text="Next Activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
