@@ -113,6 +113,9 @@ class MainActivity : AppCompatActivity() {
                     systemUiFlags1 = systemUiFlags1 or View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR
                 }
             }
+            if (layout_fullscreen_cb.isChecked) {
+                systemUiFlags1 = systemUiFlags1 or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            }
             isRootViewFitSystem = fit_system_window_cb.isChecked
             windowFlags = windowFlag1
             systemUiFlags = systemUiFlags1
